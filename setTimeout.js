@@ -10,9 +10,11 @@ var timer1 = setTimeout(function(name){
     console.log('Hello ' + name);
 }, 3000, 'Rafael');
 
+timer1.unref();
+
 console.log('Waiting on timer');
 
-setTimeout(function(timer){
-    clearTimeout(timer);
-    console.log('cleared timer');
-}, 3000, timer1);
+// setTimeout(function(timer){
+//     clearTimeout(timer);
+//     console.log('cleared timer');
+// }, 3000, timer1);
